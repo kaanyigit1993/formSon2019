@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div align="center">
+	<h1>CREATE NEW FORM</h1>
+	<br/>
+	<div class="container" align=center>
+	<form action="#" th:action="@{save}" th:object="${element}" method="post">
+	
+	
+		ISIM
+		<br/>
+		<textarea   th:field="*{isim}"> </textarea>
+
+	<br/>
+	
+		SOY-ISIM
+		<br/>
+		<textarea  th:field="*{soyisim}"> </textarea>
+	
+	<br/>
+		TC KIMLIK NUMARASI 
+		<br/>
+		<textarea th:field="*{tcno}"> </textarea>
+	
+	<br/>
+	
+		ADRES
+		<br/>
+		<textarea  th:field="*{adres}"> </textarea>
+	
+	<br/>
+
+		TELEFON 
+		<br/>
+	<textarea th:field="*{telefon}"></textarea>
+	
+	
+	<br/>
+		 e-Mail 
+		<br/>
+		<textarea th:field="*{email}"></textarea>
+	<br/>
+		DOGUM TARIHI 
+		<br/>
+		<textarea th:field="*{dogumtarihi}"></textarea>
+	
+	<br/>
+		 PERAKENDE TİCARETİ İLE UĞRAŞTINIZ MI?  
+		<br/>
+		<textarea  th:field="*{perakendebilgi}"></textarea>
+	
+	<br/>
+		LOKUMCU BABA’YI TERCİH ETMENİZİN SEBEBİ NEDİR?
+		<br/>
+		<textarea th:field="*{tercihbilgi}"> </textarea>
+<br/>
+		 HANGİ İL/İLÇE/SEMT İÇİN LOKUMCU BABA İŞLETMECİLİĞİ DÜŞÜNÜYORSUNUZ?  
+		<br/>
+		<textarea   th:field="*{konumbilgi}"></textarea>
+	
+	<br/>
+
+		 YATIRIM MİKTARINIZ NEDİR? 
+		<br/>
+		<textarea  th:field="*{yatirimbilgi}"> </textarea>
+	
+	<br/>
+	
+		EKLEMEK İSTEDİKLERİNİZ: 
+		<br/>
+		<textarea  th:field="*{ekbilgi}"> </textarea>
+		<br/>
+		<br/>
+		<button type="submit"> KAYDET </button>
+	
+	</form>
+	</div>
+	</div>
+
+
+</body>
+</html>
